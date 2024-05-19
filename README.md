@@ -1,27 +1,28 @@
-# AngularMoment4
+# Angular Ramschema 📝
+Detta projekt är en webbsida för att visa och hantera kurser inom webbutveckling genom en Angular applikation, samt träna på att göra HTTP-anrop och HttpClient. Användaren kan söka efter kurser och sortera dem baserat på olika kolumner.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+## 🛠️ Funktioner
 
-## Development server
+- **Hämta och presentera data**: Applikationen hämtar kursdata från en JSON-fil och visar den i en tabell.
+- **Sortering**: Användare kan sortera tabellen efter kurskod, kursnamn och progression genom att klicka på respektive kolumnrubrik.
+- **Filtrering**: Användare kan söka efter kurser genom att ange en textfras som filtrerar både kurskoder och kursnamn.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Data och Struktur 📚 
+Data som används består av en array med kurser för Webbutvecklings-programmet. Denna data hämtas från den här externa URL:en
+https://webbutveckling.miun.se/files/ramschema_ht23.json
 
-## Code scaffolding
+### Verktyg 📦
+Angular
+Angular CLI
+RxJS
+SCSS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 📞 Kontakt
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+För frågor eller feedback, kontakta mig gärna via:
 
-## Running unit tests
+- **Email**: [haris18sabanovic@outlook.com](mailto:haris18sabanovic@outlook.com)
+- **GitHub**: [HarisSabanovic](https://github.com/HarisSabanovic)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
