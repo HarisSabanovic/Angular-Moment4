@@ -1,6 +1,6 @@
 export interface CourseInfo {
     code : string,
-    name : string,
+    coursename : string,
     progression : string,
     syllabus : string
 }

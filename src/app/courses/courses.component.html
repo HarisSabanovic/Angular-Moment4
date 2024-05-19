@@ -1,5 +1,10 @@
 <h1>Webbtuveckling Ramschema</h1>
 
+<div class="filter">
+    <label for="filter">Sök kurs: </label>
+    <input type="text" id="filter" [(ngModel)] = "filterValue" (input) = "applyFilter()">
+</div>
+
 <table class="courses-table">
     <thead>
       <tr>
@@ -10,13 +15,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let course of courses">
+      <tr *ngFor="let course of filteredCourses">
         <td>{{ course.code }}</td>
-        <td>{{ course.name }}</td>
+        <td>{{ course.coursename }}</td>
         <td>{{ course.progression }}</td>
         <td>{{ course.syllabus }}</td>
       </tr>
     </tbody>
   </table>
-
-  <h1>test</h1>
