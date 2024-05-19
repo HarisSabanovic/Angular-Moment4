@@ -28,7 +28,8 @@ export class CoursesComponent {
 
   applyFilter(): void {
     this.filteredCourses = this.courses.filter((course) => 
-      course.coursename.toLowerCase().includes(this.filterValue.toLowerCase())
+      course.coursename.toLowerCase().includes(this.filterValue.toLowerCase()) || 
+      course.code.toLowerCase().includes(this.filterValue.toLowerCase())
     );
   }
 
