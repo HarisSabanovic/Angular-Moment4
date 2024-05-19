@@ -31,4 +31,16 @@ export class CoursesComponent {
       course.coursename.toLowerCase().includes(this.filterValue.toLowerCase())
     );
   }
+
+  sortCourseProg() {
+    this.filteredCourses.sort((a, b) => a.progression.localeCompare(b.progression));
+  }
+
+  sortCourseCode() {
+    this.filteredCourses.sort((a, b) => a.code.localeCompare(b.code));
+  }
+
+  sortCourseName() {
+    this.filteredCourses.sort((a, b) => a.coursename.localeCompare(b.coursename));
+  }
 }
